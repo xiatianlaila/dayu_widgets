@@ -15,8 +15,8 @@ from __future__ import print_function
 import functools
 
 # Import third-party modules
-from Qt import QtCore
-from Qt import QtWidgets
+from qtpy import QtCore
+from qtpy import QtWidgets
 from dayu_path import DayuPath
 
 # Import local modules
