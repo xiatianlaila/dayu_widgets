@@ -1109,6 +1109,38 @@ MMenuTabWidget[dayu_size="@huge"] QWidget#bar_widget{
 MMenuTabWidget[dayu_size="@large"] QWidget#bar_widget{
     height: @large@unit;
 }
+MSidebarNavigation {
+    background-color: @background_out_color;
+    border-right: 1px solid @border_color;
+}
+MSidebarNavigationItem {
+    border: none;
+    border-radius: @border_radius_base@unit;
+    padding: 0;
+    color: @primary_text_color;
+    background-color: transparent;
+    text-align: left;
+}
+MSidebarNavigation MToolButton#sidebar_toggle_button {
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+}
+MSidebarNavigationItem:hover {
+    color: @primary_5;
+    background-color: @background_selected_color;
+}
+MSidebarNavigationItem:checked {
+    color: @primary_text_color;
+    background-color: transparent;
+}
+MSidebarNavigationItem:checked:hover {
+    color: @primary_text_color;
+    background-color: transparent;
+}
+MSidebarNavigationItem[dayu_collapsed="true"] {
+    padding: 0;
+}
 MSlider::groove:horizontal {
     border-radius: @slider_radius@unit;
     height: @slider_height@unit;
