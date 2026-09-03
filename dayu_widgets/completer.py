@@ -16,6 +16,7 @@ class MCompleter(QtWidgets.QCompleter):
         self.setProperty("animatable", True)
 
         popup = self.popup()
+        popup.setObjectName("MCompleterPopup")
         dayu_theme.apply(popup)
 
         self._opacity_anim = QtCore.QPropertyAnimation(popup, b"windowOpacity")

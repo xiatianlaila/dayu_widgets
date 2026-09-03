@@ -735,6 +735,28 @@ MComboBox:hover{
 MComboBox:disabled{
     color: @disable_color;
 }
+
+MComboBox QAbstractItemView {
+    background-color: @background_in_color;
+    border: 1px solid @border_color;
+    padding: 0;
+    outline: 0;
+
+    selection-color: @text_color_inverse;
+    selection-background-color: @primary_color;
+}
+
+MComboBox QAbstractItemView::item {
+    min-height: @medium@unit;
+    padding: 0 8px;
+    border: none;
+}
+
+MComboBox QAbstractItemView::item:hover {
+    color: @text_color_inverse;
+    background-color: @primary_5;
+}
+
 /* MLabel */
 MLabel{
     padding: 2px;
@@ -844,6 +866,30 @@ MLineEdit[dayu_type=error]:focus{
 }
 MLineEdit:disabled{
     color: @disable_color;
+}
+
+#MCompleterPopup {
+    background-color: @background_in_color;
+    alternate-background-color: @background_color;
+    border: 1px solid @border_color;
+    padding: 0;
+    outline: none;
+}
+
+#MCompleterPopup::item {
+    min-height: @medium@unit;
+    padding: 0 8px;
+    border: none;
+}
+
+#MCompleterPopup::item:hover {
+    color: @text_color_inverse;
+    background-color: @primary_5;
+}
+
+#MCompleterPopup::item:selected {
+    color: @text_color_inverse;
+    background-color: @primary_color;
 }
 
 MTabWidget::pane { /* The tab widget frame */
